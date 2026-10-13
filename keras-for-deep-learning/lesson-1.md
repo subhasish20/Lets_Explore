@@ -318,28 +318,3 @@ Answer any subset; I'll grade before moving on if you like, or you can take **Ne
 4. *(Design)* What problem does the API/implementation split solve, and what is the cost it imposes on someone reading the source?
 
 5. *(Navigation)* Write the `git grep` command you would use to find *every* place in `keras/src/` that imports TensorFlow directly outside the backend package, and explain what an unexpected hit would mean.
-
-## L. Navigation
-
-Choose one:
-
-- **Next Chapter** — proceed to Chapter 2 (Public API and Package Initialization).
-- **Repeat This Chapter** — I'll re-explain Chapter 1 with a different angle (either simpler or more detailed — tell me which).
-- **Explore Deeper** — go deeper into the API-generation and re-export mechanism in this revision.
-- **Trace the Code** — follow `import keras` frame-by-frame, including the backend-selection logic in `keras/src/backend/__init__.py`.
-- **Quiz Me** — I'll ask the Knowledge Check questions one at a time and grade your answers.
-- **Hands-on Task** — extended version of the exercise: instrument `keras/__init__.py` with a print to see import order live.
-- **Previous Chapter** — there is none; you're at the start.
-
----
-
-### Progress Record
-
-- **Current chapter:** 1 — Keras Repository Architecture and Entry Points
-- **Completed chapters:** none yet (Chapter 1 is in progress pending your Knowledge Check / Next Chapter)
-- **Core concepts introduced:** API/implementation seam (`keras/api` vs `keras/src`), backend seam (`keras/src/backend`), re-export as name binding, import-time backend selection.
-- **Files explored by command (verify before trusting):** `keras/__init__.py`, `keras/api/__init__.py`, `keras/api/layers/__init__.py`, `keras/src/backend/__init__.py`, `keras/src/ops/__init__.py`, `keras/src/trainers/`.
-- **Exercises completed:** none yet.
-- **Next recommended chapter:** 2 — Public API and Package Initialization.
-
-**Before you pick Next Chapter, please paste the output of the four Step 0 commands.** With the revision hash and the `ls` of your repo root, I can tailor Chapter 2 to your exact tree instead of the generic Keras 3 layout.
